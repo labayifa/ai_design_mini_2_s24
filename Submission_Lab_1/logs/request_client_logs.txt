@@ -1,0 +1,16 @@
+/Users/ayifa/Desktop/CMU Africa/Spring 2024/AI_Systems_Designs/Assignments/Mini_2/request_client.py:8: DeprecationWarning: 
+Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+but was not found to be installed on your system.
+If this would cause problems for you,
+please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+        
+  import pandas as pd
+Uploading the dataset.
+Dataset upload response:  0
+Creating a new model with the uploaded dataset.
+Model created response:  0
+Retraining the model with the uploaded dataset.
+Retrained model response:  {"loss": [0.055514220148324966, 0.05885689705610275, 0.053359441459178925, 0.06300260871648788, 0.06157885491847992, 0.0604538768529892, 0.05739247798919678, 0.03789765015244484, 0.03916078433394432, 0.039311278611421585], "accuracy": [0.9770594239234924, 0.9770594239234924, 0.9760167002677917, 0.9739311933517456, 0.980187714099884, 0.9770594239234924, 0.9791449308395386, 0.985401451587677, 0.9864442348480225, 0.9843587279319763]}
+Scoring a selected single row.
+Score response:  "Score done, class=2"
