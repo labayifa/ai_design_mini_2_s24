@@ -1,0 +1,33 @@
+[1;31m
+________                               _______________
+___  __/__________________________________  ____/__  /________      __
+__  /  _  _ \_  __ \_  ___/  __ \_  ___/_  /_   __  /_  __ \_ | /| / /
+_  /   /  __/  / / /(__  )/ /_/ /  /   _  __/   _  / / /_/ /_ |/ |/ /
+/_/    \___//_/ /_//____/ \____//_/    /_/      /_/  \____/____/|__/
+
+[0;33m
+WARNING: You are running this container as root, which can cause new files in
+mounted volumes to be created as the root user on your host machine.
+
+To avoid this, run the container by specifying your user's userid:
+
+$ docker run -u $(id -u):$(id -g) args...
+[m
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# 
+[?2004l[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# 
+[?2004l[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# ^C[?2004l[?2004h[?2004l
+[?2004h]0;root@33cd7eb235ce: /approot@33cd7eb235ce:/app# 
