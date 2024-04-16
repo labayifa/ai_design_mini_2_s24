@@ -1,36 +1,41 @@
 ##  Mini 2 Lab 3 csagbo
-We implemented a dashboard to :
-- Add a batch execution test function
+> I implemented a dashboard to visualize the Iris dataset.
+> The dashboard is a web application that allows users to interact with the data.
+> The dashboard is built using the Dash library in Python. 
+> The dashboard has the following features:
+> * Explore Iris training data
+>   - Load the Iris dataset
+>   - Upload a new dataset
+>   - Visualize the dataset with different plots (Histogram, Scatterplot)
+>   - Dataset overview in a table
+> * Build model and perform training. Here we can 
+>   - Build a new model by select a given uploaded dataset through it's ID
+>   - Retrain an existing model using its ID and a given dataset ID.
+> * Score model: 
+	- We basically score a row of data which is a set of entries for which we classify the species of Iris. 
+> * Test Iris data
+> 	- We can test the model with a given dataset ID and get the accuracy of the model.
 
-### Docker config
-> We Create Dockerfile config to build and push our image to docker hub
+### Files
 
 > This project files are described below:
+> - __*app_lab3_template.py*__ : The main file for the dashboard built with Dash
 > - __*app_iris.py*__ : The Rest API written in python with Flask
-> - __*base_iris_lab1.py*__ : 
-> - __*iris_extended_encoded.csv*__ :
+> - __*base_iris_lab1.py*__ : The base class for the Iris dataset and model
+> - __*iris_extended_encoded.csv*__ : The Iris dataset
 > - __*request_client.py*__ : The client driver
 > - __*logs*__ : Folder containing the logs listed below
 
-> -![Docker Image pushed](./logs/docker_push_image_logs.png)
-> -![Docker Ran_Container](./logs/run_container_logs.jpeg)
-> -![Container_executed](./logs/run_exec_logs.jpeg)
+### Running the code:
+You can run the code by running the following command in the terminal:
 
-> Also known as a Representational State Transfer Application programming interface, a Rest API is an architectural style for building distributed systems based on hypermedia around resources. An example of resource is for instance a customer managed by our systems of a machine learning model. When we are designing them some best practices should be followed: 
-	- The type of request aligned with some HTTP Verbs:
-		* GET: retrieve resource: GET /customers/1
-		* GET : retrieve all resources : GET /customers
-		* POST: creating a new resource:  POST /customers
-		* PUT: create or replace an existing resource: PUT /customers
-		* DELETE: to delete a resource: DELETE /customers/1
-		* PATCH: update partially a resource
+- First Terminal to start the Rest API
+   - `python3 app_iris.py`
+- Second Terminal to start the Dash application
+   - `python3 app_lab3_template.py`
+   - Make sure to have the  `request_client.py` file in this same directory to test the application.
 
-	The PUT, and POST, PATCH, DELETE requests can carry some request body. For GET requests we only need a request parameter (Query parameters or path variables), also applicable for the other HTTP Verbs. Apart from that the resources should be organized following the semantics above for best practices. 
+- When the applications start take the url of the Dash application and paste it in the browser to view the dashboard.
 
-> - After each request, there is a response with a given content and status code: ● 4xx: Error coming from client side
-> ● 5xx: Server error
-> ● 2xx: Successful request
-> ● 3xx: Resource redirected.
+!!! Thank you for reviewing my submission. !!!
 
-> Other than all this every Rest resource should be accessed by specifying some Media Type specified by the developer in his documentation to accept incoming and sending the appropriate response (Application JSON, XML).
-		
